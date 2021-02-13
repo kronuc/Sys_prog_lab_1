@@ -4,7 +4,7 @@
 class Hotel
 {
 	public:
-	Hotel();
+	Hotel(int inhotelCode,std::string inName, std::string inCountry, std::string inCity, std::string inAddress, int inAmountOfStars, int inContactNumber);
 	~Hotel();
 	
 	int getHotelCode();

@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Hotel(int inhotelCode,std::string inName, std::string inCountry, std::string inCity, std::string inAddress, int inAmountOfStars, int inContactNumber)
+Hotel::Hotel(int inhotelCode,std::string inName, std::string inCountry, std::string inCity, std::string inAddress, int inAmountOfStars, int inContactNumber)
 {
 	hotelCode = inHotelCode;
 	name = inName;
@@ -14,22 +14,48 @@ Hotel(int inhotelCode,std::string inName, std::string inCountry, std::string inC
 	contactNumber = inContactNumber;	
 }
 
-~Hotel();
+Hotel::~Hotel(){}
 	
-	int getHotelCode();
-	std::string getName();
-	std::string getCountry();
-	std::string getCity();
-	std::string getAddress();
-	int getAmountOfStars();
-	int getContactNumber();
-	
-	void setHotelCode(int hotelCode);
-	void setName(std::string name);
-	void setCountry(std::string country);
-	void setCity(std::string city);
-	void setAddress(std::string address);
-	void setAmountOfStars(int amountOfStars);
-	void setContactNumber(int contactNumber);
+int Hotel::getHotelCode()
+{
+	return hotelCode;
+}
+
+std::string Hotel::getName()
+{
+	return name;
+}
+
+std::string Hotel::getCountry()
+{
+	return country;
+}
+
+std::string Hotel::getCity()
+{
+	return city;
+}
+
+std::string Hotel::getAddress()
+{
+	return address;
+}
+int Hotel::getAmountOfStars()
+{
+	return amountOfStars;
+}
+
+int Hotel::getContactNumber();
+{
+	return contactNumber;
+}
+
+void Hotel::setHotelCode(int hotelCode);
+void Hotel::setName(std::string name);
+void Hotel::setCountry(std::string country);
+void Hotel::setCity(std::string city);
+void Hotel::setAddress(std::string address);
+void Hotel::setAmountOfStars(int amountOfStars);
+void Hotel::setContactNumber(int contactNumber);
 	
 	
