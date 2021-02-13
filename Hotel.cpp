@@ -50,12 +50,39 @@ int Hotel::getContactNumber();
 	return contactNumber;
 }
 
-void Hotel::setHotelCode(int hotelCode);
-void Hotel::setName(std::string name);
-void Hotel::setCountry(std::string country);
-void Hotel::setCity(std::string city);
-void Hotel::setAddress(std::string address);
-void Hotel::setAmountOfStars(int amountOfStars);
-void Hotel::setContactNumber(int contactNumber);
+void Hotel::setHotelCode(int inHotelCode)
+{
+	hotelCode = inHotelCode;
+}
+
+void Hotel::setName(std::string inName)
+{
+	name = inName;
+}
+
+void Hotel::setCountry(std::string inCountry)
+{
+	country = inCountry;
+}
+
+void Hotel::setCity(std::string inCity)
+{
+	city = inCity;
+}
+
+void Hotel::setAddress(std::string inAddress)
+{
+	address = inAddress;
+}
+
+void Hotel::setAmountOfStars(int inAmountOfStars)
+{
+	amountOfStars = inAmountOfStars;
+}
+
+void Hotel::setContactNumber(int inContactNumber)
+{
+	contactNumber = inContactNumber;
+}
 	
 	

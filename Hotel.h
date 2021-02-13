@@ -15,13 +15,13 @@ class Hotel
 	int getAmountOfStars();
 	int getContactNumber();
 	
-	void setHotelCode(int hotelCode);
-	void setName(std::string name);
-	void setCountry(std::string country);
-	void setCity(std::string city);
-	void setAddress(std::string address);
-	void setAmountOfStars(int amountOfStars);
-	void setContactNumber(int contactNumber);
+	void setHotelCode(int inHotelCode);
+	void setName(std::string inName);
+	void setCountry(std::string CCountry);
+	void setCity(std::string inCity);
+	void setAddress(std::string inAddress);
+	void setAmountOfStars(int inAmountOfStars);
+	void setContactNumber(int inContactNumber);
 	
 	
 	private:
