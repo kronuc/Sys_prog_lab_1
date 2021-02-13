@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Car.h"
+#include "Hotel.h"
 
 using namespace std;
 

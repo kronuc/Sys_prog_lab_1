@@ -85,4 +85,3 @@ void Hotel::setContactNumber(int inContactNumber)
 	contactNumber = inContactNumber;
 }
 	
-	
