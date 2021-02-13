@@ -5,6 +5,7 @@ class Hotel
 {
 	public:
 	Hotel(int inhotelCode,std::string inName, std::string inCountry, std::string inCity, std::string inAddress, int inAmountOfStars, int inContactNumber);
+	Hotel();
 	~Hotel();
 	
 	int getHotelCode();
@@ -32,4 +33,4 @@ class Hotel
 	std::string address;
 	int amountOfStars;
 	int contactNumber;	
-}
+};

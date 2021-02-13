@@ -1,9 +1,9 @@
 #include <iostream>
-#include "Car.h"
+#include "Hotel.h"
 
 using namespace std;
 
-Hotel::Hotel(int inhotelCode,std::string inName, std::string inCountry, std::string inCity, std::string inAddress, int inAmountOfStars, int inContactNumber)
+Hotel::Hotel(int inHotelCode,std::string inName, std::string inCountry, std::string inCity, std::string inAddress, int inAmountOfStars, int inContactNumber)
 {
 	hotelCode = inHotelCode;
 	name = inName;
@@ -13,6 +13,9 @@ Hotel::Hotel(int inhotelCode,std::string inName, std::string inCountry, std::str
 	amountOfStars = inAmountOfStars;
 	contactNumber = inContactNumber;	
 }
+
+Hotel::Hotel()
+{}
 
 Hotel::~Hotel(){}
 	
@@ -45,7 +48,7 @@ int Hotel::getAmountOfStars()
 	return amountOfStars;
 }
 
-int Hotel::getContactNumber();
+int Hotel::getContactNumber()
 {
 	return contactNumber;
 }
