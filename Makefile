@@ -6,7 +6,7 @@ LDFLAGS=
 all: TravelAgency 
 
 TravelAgency: Hotel.o TravelAgency.o
-	g++ $(LDFLAGS) Hotel.o TravelAgency.o -o  TravelAgency
+	$(CC) $(LDFLAGS) Hotel.o TravelAgency.o -o  TravelAgency
 	
 Hotel.o: Hotel.cpp
 	$(CC) $(CFLAGS) -c Hotel.cpp 
