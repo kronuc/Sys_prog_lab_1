@@ -25,16 +25,8 @@ Hotel::Hotel()
 {
 }
 
-<<<<<<< HEAD
-Hotel::Hotel()
-{}
-
-Hotel::~Hotel(){}
-	
-=======
 Hotel::~Hotel() {}
 
->>>>>>> test
 int Hotel::getHotelCode()
 {
 	return hotelCode;

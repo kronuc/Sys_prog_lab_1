@@ -40,9 +40,5 @@ private:
 	string city;
 	string address;
 	int amountOfStars;
-<<<<<<< HEAD
-	int contactNumber;	
-=======
 	int contactNumber;
->>>>>>> test
 };
