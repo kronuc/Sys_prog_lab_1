@@ -4,13 +4,7 @@ using std::string;
 class Hotel
 {
 public:
-	Hotel(int inhotelCode,
-		  string inName,
-		  string inCountry,
-		  string inCity,
-		  string inAddress,
-		  int inAmountOfStars,
-		  int inContactNumber);
+	Hotel(int inhotelCode, string inName, string inCountry, string inCity, string inAddress, int inAmountOfStars, int inContactNumber);
 	Hotel();
 
 	~Hotel();

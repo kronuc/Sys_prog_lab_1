@@ -4,13 +4,7 @@ using std::string;
 
 using namespace std;
 
-Hotel::Hotel(int inHotelCode,
-			 string inName,
-			 string inCountry,
-			 string inCity,
-			 string inAddress,
-			 int inAmountOfStars,
-			 int inContactNumber)
+Hotel::Hotel(int inHotelCode, string inName, string inCountry, string inCity, string inAddress, int inAmountOfStars, int inContactNumber)
 {
 	hotelCode = inHotelCode;
 	name = inName;
