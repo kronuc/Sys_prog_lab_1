@@ -1,9 +1,16 @@
 #include <iostream>
 #include "Hotel.h"
+using std::string;
 
 using namespace std;
 
-Hotel::Hotel(int inHotelCode,std::string inName, std::string inCountry, std::string inCity, std::string inAddress, int inAmountOfStars, int inContactNumber)
+Hotel::Hotel(int inHotelCode,
+			 string inName,
+			 string inCountry,
+			 string inCity,
+			 string inAddress,
+			 int inAmountOfStars,
+			 int inContactNumber)
 {
 	hotelCode = inHotelCode;
 	name = inName;
@@ -11,35 +18,36 @@ Hotel::Hotel(int inHotelCode,std::string inName, std::string inCountry, std::str
 	city = inCity;
 	address = inAddress;
 	amountOfStars = inAmountOfStars;
-	contactNumber = inContactNumber;	
+	contactNumber = inContactNumber;
 }
 
 Hotel::Hotel()
-{}
+{
+}
 
-Hotel::~Hotel(){}
-	
+Hotel::~Hotel() {}
+
 int Hotel::getHotelCode()
 {
 	return hotelCode;
 }
 
-std::string Hotel::getName()
+string Hotel::getName()
 {
 	return name;
 }
 
-std::string Hotel::getCountry()
+string Hotel::getCountry()
 {
 	return country;
 }
 
-std::string Hotel::getCity()
+string Hotel::getCity()
 {
 	return city;
 }
 
-std::string Hotel::getAddress()
+string Hotel::getAddress()
 {
 	return address;
 }
@@ -53,27 +61,41 @@ int Hotel::getContactNumber()
 	return contactNumber;
 }
 
+string Hotel::getHotelShortInfo()
+{
+	return "Hotel: " + name + '\n' + "Country: " + country + '\n' + "City: " + city + '\n' + "Address: " + address;
+}
+
+string Hotel::isTop()
+{
+	if (amountOfStars >= 5)
+	{
+		return "Yes";
+	}
+	return "No";
+}
+
 void Hotel::setHotelCode(int inHotelCode)
 {
 	hotelCode = inHotelCode;
 }
 
-void Hotel::setName(std::string inName)
+void Hotel::setName(string inName)
 {
 	name = inName;
 }
 
-void Hotel::setCountry(std::string inCountry)
+void Hotel::setCountry(string inCountry)
 {
 	country = inCountry;
 }
 
-void Hotel::setCity(std::string inCity)
+void Hotel::setCity(string inCity)
 {
 	city = inCity;
 }
 
-void Hotel::setAddress(std::string inAddress)
+void Hotel::setAddress(string inAddress)
 {
 	address = inAddress;
 }
@@ -87,4 +109,3 @@ void Hotel::setContactNumber(int inContactNumber)
 {
 	contactNumber = inContactNumber;
 }
-	
