@@ -1,6 +1,6 @@
-binary: UserInterface.o libHotel.a
+binary: UserInterface.o 
 	g++ -o binary UserInterface.o -L. -lHotel
-UserInterface.o: UserInterface.cpp
+UserInterface.o: UserInterface.cpp libHotel.a
 	g++ -c UserInterface.cpp
 libHotel.a: Hotel.o
 	ar cr libHotel.a Hotel.o
