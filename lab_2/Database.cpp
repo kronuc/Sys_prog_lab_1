@@ -4,7 +4,7 @@
 #include <stdexcept>
 #include <string>
 
-#include "database.h"
+#include "Database.h"
 
 using namespace std;
 
@@ -59,7 +59,7 @@ namespace Records
       }
     }
 
-    cerr << "No match with name " << inFirstName << " " << inLastName << endl;
+    cerr << "No match with name " << inName << " " << inCountry << endl;
     throw exception();
   }
   void Database::displayAll()

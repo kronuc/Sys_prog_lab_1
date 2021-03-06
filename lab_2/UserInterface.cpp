@@ -2,7 +2,7 @@
 #include <stdexcept>
 #include <string>
 
-#include "database.h"
+#include "Database.h"
 
 using namespace std;
 using namespace Records;
