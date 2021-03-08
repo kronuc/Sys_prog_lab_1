@@ -5,7 +5,7 @@ namespace Records
 {
 
 	const int kMaxHotels = 100;
-	const int kFirstHotelNumber = 10;
+	const int kFirstHotelNumber = 0;
 	class Database
 	{
 	public:
@@ -18,7 +18,8 @@ namespace Records
 		void displayAll();
 		void displayCurrent();
 		void displayBankrupted();
-
+		void load();
+		void save();
 	protected:
 		Hotel mHotels[kMaxHotels];
 		int mNextSlot;

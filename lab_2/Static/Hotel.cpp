@@ -65,7 +65,6 @@ void Hotel::display()
 	cout << "Contact Number: " << getAmountOfStars() << endl;
 	cout << "Address: " << getAddress() << endl;
 	cout << endl;
-	cout << toString() << endl;
 }
 
 int Hotel::getHotelCode()
