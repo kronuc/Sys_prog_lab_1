@@ -32,6 +32,8 @@ public:
 	void display(); // outputs hotel info to the console
 	void goBankrupt();
 	void startBusiness();
+	string toString();
+	void setDataFromString(string row);
 
 	void setHotelCode(int inHotelCode);
 	void setName(string inName);
@@ -50,4 +52,5 @@ private:
 	int amountOfStars;
 	int contactNumber;
 	bool isGoBankrupted;
+	bool toBool(string row);
 };

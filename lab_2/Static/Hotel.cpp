@@ -65,6 +65,7 @@ void Hotel::display()
 	cout << "Contact Number: " << getAmountOfStars() << endl;
 	cout << "Address: " << getAddress() << endl;
 	cout << endl;
+	cout << toString() << endl;
 }
 
 int Hotel::getHotelCode()
@@ -148,4 +149,33 @@ void Hotel::setAmountOfStars(int inAmountOfStars)
 void Hotel::setContactNumber(int inContactNumber)
 {
 	contactNumber = inContactNumber;
+}
+
+string Hotel::toString()
+{
+	return "--(name)--" + name + 
+		"--(hotel code)--" + to_string(hotelCode) +
+		"--(country)--" + country +
+		"--(city)--" + city +
+		"--(address)--" + address +
+		"--(amount of stars)--" + to_string(amountOfStars) +
+		"--(contact number)--" + to_string(contactNumber) +
+		"--(is bankrupted)--" + to_string(isGoBankrupted); 
+}
+void Hotel::setDataFromString(string row)
+{
+	name = row.substr(row.find("--(name)--") + 10, row.find("--(hotel code)--") - row.find("--(name)--") - 10);
+	hotelCode = stoi(row.substr(row.find("--(hotel code)--") + 16, row.find("--(country)--") - row.find("--(hotel code)--") - 16),0 , 10);
+	country = row.substr(row.find("--(country)--") + 13, row.find("--(city)--") - row.find("--(country)--") - 13);
+	city = row.substr(row.find("--(city)--") + 10, row.find("--(address)--") - row.find("--(city)--") - 10);
+	address = row.substr(row.find("--(address)--") + 13, row.find("--(amount of stars)--") - row.find("--(address)--") - 13);
+	amountOfStars = stoi(row.substr(row.find("--(amount of stars)--") + 21, row.find("--(contact number)--") - row.find("--(amount of stars)--") - 21),0 , 10);
+	contactNumber = stoi(row.substr(row.find("--(contact number)--") + 20, row.find("--(city)--") - row.find("--(contact number)--") - 20),0 , 10);
+	isGoBankrupted = toBool(row.substr(row.find("--(is bankrupted)--") + 19, row.size() - row.find("--(is bankrupted)--") - 19));
+}
+
+bool Hotel::toBool(string row)
+{
+	if (row != "0") { return true; }
+	else {return false;}
 }
